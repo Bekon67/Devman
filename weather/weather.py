@@ -1,7 +1,7 @@
 import requests
 
 
-def main():
+def get_response():
     response_for_print = []
     locations = ['Лондон', 'SVO', 'Череповец']
     for location in locations:
@@ -11,5 +11,9 @@ def main():
     return response_for_print
 
 
+def main():
+    print(*get_response())
+
+
 if __name__ == '__main__':
-    print(*main())
+    main()
